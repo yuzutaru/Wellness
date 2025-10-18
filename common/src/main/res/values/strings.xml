@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to">Welcome to</string>
+    <string name="ui_kit">UI Kit</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In.</string>
+</resources>
