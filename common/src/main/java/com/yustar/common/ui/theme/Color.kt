@@ -1,4 +1,4 @@
-package com.yustar.wellness.ui.theme
+package com.yustar.common.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

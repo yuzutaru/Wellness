@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Wellness"
 include(":app")
+include(":common")
