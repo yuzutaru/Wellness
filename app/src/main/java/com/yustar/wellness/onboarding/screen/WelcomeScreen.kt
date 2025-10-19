@@ -1,4 +1,4 @@
-package com.yustar.wellness
+package com.yustar.wellness.onboarding.screen
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -30,6 +30,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yustar.common.ui.theme.Red50
 import com.yustar.common.ui.theme.WellnessTheme
+import com.yustar.wellness.R
+import com.yustar.wellness.onboarding.widget.GetStartedButton
 
 /**
  * Created by Yustar Pramudana on 18/10/25.
@@ -87,7 +89,7 @@ fun WelcomeScreen() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Bottom
         ) {
-            GetStartedButton {  }
+            GetStartedButton { }
 
             Spacer(modifier = Modifier.height(32.dp))
 

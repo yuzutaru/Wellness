@@ -1,4 +1,4 @@
-package com.yustar.wellness
+package com.yustar.wellness.onboarding.widget
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.PaddingValues
@@ -18,6 +18,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.yustar.common.R
 import com.yustar.common.ui.theme.WellnessTheme
 
 /**
@@ -39,7 +40,7 @@ fun GetStartedButton(
         ) {
             Text(
                 style = MaterialTheme.typography.labelLarge,
-                text = stringResource(com.yustar.common.R.string.get_started)
+                text = stringResource(R.string.get_started)
             )
 
             Spacer(modifier = Modifier.width(12.dp))

@@ -29,6 +29,13 @@ val Typography = Typography(
         lineHeight = 36.sp,
         letterSpacing = 0.5.sp
     ),
+    titleMedium = TextStyle(
+        fontFamily = AgRoyal,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        lineHeight = 22.sp,
+        letterSpacing = 0.5.sp
+    ),
     labelLarge = TextStyle(
         fontFamily = AgRoyal,
         fontWeight = FontWeight.Bold,
@@ -39,6 +46,13 @@ val Typography = Typography(
     labelMedium = TextStyle(
         fontFamily = AgRoyal,
         fontWeight = FontWeight.Medium,
+        fontSize = 12.sp,
+        lineHeight = 20.sp,
+        letterSpacing = 0.5.sp
+    ),
+    labelSmall = TextStyle(
+        fontFamily = AgRoyal,
+        fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         lineHeight = 20.sp,
         letterSpacing = 0.5.sp
