@@ -1,4 +1,4 @@
-package com.yustar.wellness.onboarding.screen
+package com.yustar.welcome.screen
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -30,8 +30,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yustar.common.ui.theme.Red50
 import com.yustar.common.ui.theme.WellnessTheme
-import com.yustar.wellness.R
-import com.yustar.wellness.onboarding.widget.GetStartedButton
+import com.yustar.welcome.R
+import com.yustar.welcome.widget.GetStartedButton
 
 /**
  * Created by Yustar Pramudana on 18/10/25.
@@ -52,7 +52,7 @@ fun WelcomeScreen() {
         ) {
             Image(
                 modifier = Modifier.size(70.dp),
-                painter = painterResource(id = R.drawable.app_icon_foreground),
+                painter = painterResource(id = com.yustar.common.R.drawable.app_icon_foreground),
                 contentDescription = "app_icon"
             )
 
@@ -67,7 +67,7 @@ fun WelcomeScreen() {
                         append("${stringResource(id = com.yustar.common.R.string.welcome_to)} ")
                     }
                     withStyle(style = SpanStyle(color = MaterialTheme.colorScheme.primary)) {
-                        append("${stringResource(id = R.string.app_name)} ")
+                        append("${stringResource(id = com.yustar.common.R.string.app_name)} ")
                     }
                     withStyle(style = SpanStyle(color = MaterialTheme.colorScheme.onSecondary)) {
                         append("${stringResource(id = com.yustar.common.R.string.ui_kit)} ")

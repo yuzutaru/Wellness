@@ -1,9 +1,9 @@
-package com.yustar.wellness.onboarding.viewmodel
+package com.yustar.welcome.viewmodel
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.lifecycle.ViewModel
-import com.yustar.wellness.onboarding.event.OnBoardingEvent
+import com.yustar.welcome.event.OnBoardingEvent
 
 /**
  * Created by Yustar Pramudana on 19/10/25.

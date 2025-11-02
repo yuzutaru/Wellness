@@ -1,4 +1,4 @@
-package com.yustar.wellness.onboarding.event
+package com.yustar.welcome.event
 
 /**
  * Created by Yustar Pramudana on 19/10/25.

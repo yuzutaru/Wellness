@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.yustar.common"
+    namespace = "com.yustar.welcome"
     compileSdk {
         version = release(36)
     }
@@ -36,6 +36,9 @@ android {
 }
 
 dependencies {
+    //common module
+    implementation(project(":common"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -1,4 +1,4 @@
-package com.yustar.wellness.onboarding.widget
+package com.yustar.welcome.widget
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -21,7 +21,7 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yustar.common.ui.theme.WellnessTheme
-import com.yustar.wellness.R
+import com.yustar.welcome.R
 
 /**
  * Created by Yustar Pramudana on 19/10/25.

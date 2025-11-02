@@ -1,4 +1,4 @@
-package com.yustar.wellness.onboarding.screen
+package com.yustar.welcome.screen
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -27,13 +27,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.yustar.common.R
 import com.yustar.common.ui.theme.WellnessTheme
-import com.yustar.wellness.onboarding.event.OnBoardingEvent
-import com.yustar.wellness.onboarding.widget.OnBoardingButton
-import com.yustar.wellness.onboarding.viewmodel.OnBoardingViewModel
-import com.yustar.wellness.onboarding.widget.OnBoardingContent
+import com.yustar.welcome.R
+import com.yustar.welcome.event.OnBoardingEvent
+import com.yustar.welcome.widget.OnBoardingButton
+import com.yustar.welcome.viewmodel.OnBoardingViewModel
+import com.yustar.welcome.widget.OnBoardingContent
 
 /**
  * Created by Yustar Pramudana on 19/10/25.
@@ -57,7 +56,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Row(
-                    modifier = Modifier.weight(0.9f),
+                    modifier = Modifier.Companion.weight(0.9f),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     for (i in 0 .. 4) {
@@ -79,7 +78,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel) {
                 Spacer(modifier = Modifier.width(4.dp))
 
                 TextButton(
-                    modifier = Modifier.weight(0.1f),
+                    modifier = Modifier.Companion.weight(0.1f),
                     contentPadding = PaddingValues(2.dp),
                     onClick = {
                         if (viewModel.page.value < 5)
@@ -90,7 +89,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel) {
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.onSecondary,
-                        text = stringResource(R.string.skip),
+                        text = stringResource(com.yustar.common.R.string.skip),
                     )
                 }
             }
@@ -98,29 +97,29 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel) {
 
         when (viewModel.page.value) {
             0 -> OnBoardingContent(
-                img = com.yustar.wellness.R.drawable.ic_personalize,
-                title = stringResource(R.string.personalize_your_health),
-                description = stringResource(R.string.achieve_your_wellness_goals)
+                img = com.yustar.welcome.R.drawable.ic_personalize,
+                title = stringResource(com.yustar.common.R.string.personalize_your_health),
+                description = stringResource(com.yustar.common.R.string.achieve_your_wellness_goals)
             )
             1 -> OnBoardingContent(
-                img = com.yustar.wellness.R.drawable.ic_your_intelligent,
-                title = stringResource(R.string.your_intelligent_fitness_companion),
-                description = stringResource(R.string.track_your_calories)
+                img = R.drawable.ic_your_intelligent,
+                title = stringResource(com.yustar.common.R.string.your_intelligent_fitness_companion),
+                description = stringResource(com.yustar.common.R.string.track_your_calories)
             )
             2 -> OnBoardingContent(
-                img = com.yustar.wellness.R.drawable.ic_emphatic,
-                title = stringResource(R.string.empathic_ai_wellness_chatbot),
-                description = stringResource(R.string.experience_compassionate_personalized_care)
+                img = R.drawable.ic_emphatic,
+                title = stringResource(com.yustar.common.R.string.empathic_ai_wellness_chatbot),
+                description = stringResource(com.yustar.common.R.string.experience_compassionate_personalized_care)
             )
             3 -> OnBoardingContent(
-                img = com.yustar.wellness.R.drawable.ic_intuitive,
-                title = stringResource(R.string.intuitive_nutrition_med_tracker),
-                description = stringResource(R.string.easily_track_your_medication_nutrition_with_the_power_of_ai)
+                img = R.drawable.ic_intuitive,
+                title = stringResource(com.yustar.common.R.string.intuitive_nutrition_med_tracker),
+                description = stringResource(com.yustar.common.R.string.easily_track_your_medication_nutrition_with_the_power_of_ai)
             )
             4 -> OnBoardingContent(
-                img = com.yustar.wellness.R.drawable.ic_helpfull,
-                title = stringResource(R.string.helpfulness_community),
-                description = stringResource(R.string.join_a_community_of_5000_users_dedicating_to_healthy_life_with_ai_ml)
+                img = R.drawable.ic_helpfull,
+                title = stringResource(com.yustar.common.R.string.helpfulness_community),
+                description = stringResource(com.yustar.common.R.string.join_a_community_of_5000_users_dedicating_to_healthy_life_with_ai_ml)
             )
         }
 
@@ -138,7 +137,7 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel) {
 @Composable
 fun NightModePreviewOnBoardingScreen() {
     WellnessTheme {
-        OnBoardingScreen(viewModel = viewModel())
+        //OnBoardingScreen(viewModel = viewModel())
     }
 }
 
@@ -146,6 +145,6 @@ fun NightModePreviewOnBoardingScreen() {
 @Composable
 fun LightModePreviewOnBoardingScreen() {
     WellnessTheme {
-        OnBoardingScreen(viewModel = viewModel())
+        //OnBoardingScreen(viewModel = viewModel())
     }
 }

@@ -1,4 +1,4 @@
-package com.yustar.wellness.onboarding.widget
+package com.yustar.welcome.widget
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.PaddingValues
